@@ -13,6 +13,12 @@
     },
     "angularjs/angular-mocks.d.ts": {
       "commit": "8c4ec896ab619e7cb6572f82423e6e1eece70f5a"
+    },
+    "angular-protractor/angular-protractor.d.ts": {
+      "commit": "708609e0764daeb5eb64104af7aca50c520c4e6e"
+    },
+    "selenium-webdriver/selenium-webdriver.d.ts": {
+      "commit": "708609e0764daeb5eb64104af7aca50c520c4e6e"
     }
   }
 }
