@@ -28,9 +28,15 @@ angular.module('myApp.view1', ['ngRoute'])
       var soma = 0;
       if ($scope.calculos != null)
       {
-        for (var index = 0; index < $scope.calculos.length; index++) {
-          soma += parseFloat($scope.calculos[index][col]);
-        }
+        soma = $scope.calculos.map(function(e){
+          return parseFloat(e[col]);
+        })
+        .filter(function (e){
+          return !isNaN(e);
+        })
+        .reduce(function(prev, current){
+          return prev + current;
+        });
       }
       return soma;
     }
